@@ -1,0 +1,66 @@
+nav {
+  flex: 1;
+  /* Permitir que el menú use el espacio restante */
+}
+nav .containerLogo {
+  flex: 0 0 auto;
+}
+nav .logo {
+  background: url(../../assets/image/FBLogo.jpg);
+  background-color: white;
+  background-position: center;
+  border-radius: 50%;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  border: 1px solid #000;
+  width: 150px;
+  height: 150px;
+  margin: 2vh;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+  /* Usar flexbox para el menú */
+  list-style: none;
+  /* Quitar los puntos de la lista */
+  padding: 0;
+  /* Quitar el padding */
+  margin: 0;
+  /* Quitar el margin */
+}
+nav ul li {
+  margin: 0 15px;
+  font-family: "Winky Sans", sans-serif;
+}
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: #111;
+}
+nav ul li.active a {
+  font-weight: bold;
+}
+nav ul .active {
+  background-color: #04AA6D;
+}
+nav .navbar-dark .navbar-toggler {
+  background-color: black; /* Color de fondo del botón */
+  border-color: black; /* Color del borde del botón */
+}
+@media (max-width: 480px) {
+  body header {
+    flex-direction: column;
+  }
+}
