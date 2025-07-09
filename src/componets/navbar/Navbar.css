@@ -1,66 +1,42 @@
-nav {
-  flex: 1;
-  /* Permitir que el menú use el espacio restante */
-}
-nav .containerLogo {
-  flex: 0 0 auto;
-}
-nav .logo {
-  background: url(../../assets/image/FBLogo.jpg);
-  background-color: white;
-  background-position: center;
-  border-radius: 50%;
-  background-size: 90%;
-  background-repeat: no-repeat;
-  border: 1px solid #000;
-  width: 150px;
-  height: 150px;
-  margin: 2vh;
-}
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  width: 100%;
-  align-items: center;
-  border-radius: 5px;
+.main-nav {
+  flex: 1 1 auto;
   display: flex;
-  /* Usar flexbox para el menú */
+  justify-content: center;
+}
+.nav-list {
+  display: flex;
   list-style: none;
-  /* Quitar los puntos de la lista */
-  padding: 0;
-  /* Quitar el padding */
   margin: 0;
-  /* Quitar el margin */
+  padding: 0;
+  gap: 2rem;
 }
-nav ul li {
-  margin: 0 15px;
-  font-family: "Winky Sans", sans-serif;
+.nav-item {
+  position: relative;
 }
-nav ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+
+.nav-link {
   text-decoration: none;
+  color: #333333;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+  position: relative;
 }
-nav ul li a:hover {
-  background-color: #111;
+.nav-link:hover {
+  color: #2563eb;
 }
-nav ul li.active a {
-  font-weight: bold;
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #2563eb;
+  transition: width 0.3s ease;
 }
-nav ul .active {
-  background-color: #04AA6D;
-}
-nav .navbar-dark .navbar-toggler {
-  background-color: black; /* Color de fondo del botón */
-  border-color: black; /* Color del borde del botón */
-}
-@media (max-width: 480px) {
-  body header {
-    flex-direction: column;
-  }
+.nav-link:hover::after {
+  width: 100%;
 }
