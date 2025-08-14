@@ -1,0 +1,1 @@
+export const IMGLogo = "../assets/image/FBLogo.jpg";
