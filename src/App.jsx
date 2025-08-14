@@ -1,6 +1,7 @@
-import Header from "./componets/header/Header";
-import Footer from "./componets/Footer/Footer";
-import ItemListContainer from "./componets/itemlistcontainer/ItemListContainer";
+import Header from "./componets/layout/header/Header";
+import Footer from "./componets/layout/Footer/Footer";
+import { CountCart } from "./componets/common/countCart/countCart";
+import { Home } from "./componets/pages/home/Home";
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
       <div>
         <Header />
         <main>
-          <ItemListContainer />
+          <Home />
         </main>
         <Footer />
       </div>
